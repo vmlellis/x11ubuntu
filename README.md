@@ -2,7 +2,9 @@
 Base Docker image for running X11 Applications
 
 
-## How to run
+## Usage
+
+```sh
 docker run -it \
            -v /tmp/.X11-unix \
            -e UID=$(id -u) \
@@ -13,3 +15,4 @@ docker run -it \
            --net=host \
            --privileged \
            {COMMAND}
+```
